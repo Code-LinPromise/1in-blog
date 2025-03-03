@@ -1,6 +1,8 @@
 import "./globals.css";
-import "../style/var.scss";
+import "@/stylesheets/var.scss";
+import  "@/stylesheets/reset.scss"
 import styles from "./layout.module.scss";
+import LayoutTab from "@/components/LayoutTab";
 
 export default function RootLayout({
   children,
@@ -10,8 +12,8 @@ export default function RootLayout({
   return (
     <html lang="zh" id="dark">
       <body className={styles.body}>
-        <div>
-          <span>首页</span>
+        <div className={styles.layout}>
+            <LayoutTab/>
         </div>
         {children}
       </body>

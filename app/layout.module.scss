@@ -1,4 +1,9 @@
 .body {
   background-color: var(--page-bg);
   min-height: 100vh;
+  padding: 56px 40px 0;
+}
+.layout{
+  display: flex;
+  flex-flow: row;
 }
